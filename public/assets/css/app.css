@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'header' 'content' 'footer';
+    grid-template-rows: 60px 1fr 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus, button:focus {
+    outline: none;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    background: #253333;
+    color: white;
+}
+
+.navbar .navbar-header {
+    margin: 0px 5px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar .navbar-options {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.navbar .navbar-options a {
+    min-width: 100px;
+    text-align: center;
+    height: 100%;
+    line-height: 60px;
+    color: white;
+}
+
+.navbar .navbar-options a:hover {
+    background: #141717;
+}
+
+main {
+    grid-area: content;
+    padding: 1em;
+}
+
+main button {
+    background: #2562ef;
+    border: 0;
+    padding: 10px;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #253333;
+    color: white;
+}
